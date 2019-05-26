@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="mycss.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="myjs.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body class="page">
+       
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Home Service Provider</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+    <div id="large-header" class="large-header" style="margin-top:20px;">
+  <canvas id="demo-canvas"></canvas>
+            <div class='container' style="height: 600px">
+            <div class="row">
+                <div class='col-md-8'></div>
+                <div class='col-md-4'>
+                    
+                    <div ng-app="" id="login"> 
+                    <center> 
+                    <img src="avatar2.png" alt="Avatar" class="avatar">
+                    <br><h4>Hello {{name}}</h4>
+                    
+                        <input class="login" ng-model="name" type="text" required="" placeholder="Name">
+                        
+                        <input class="login" type="password" required="" placeholder="Password"> 
+                    <br>
+                    <a href="page.html" ><button type="submit" class="inp" style="background-color: green; color: white; font-family: serif;"> LOGIN</button>
+                    </a></center>
+                        <br>
+                        <label style="padding-left: 30px">
+                            <input type="checkbox" checked="checked" name="remember" > Remember me
+                        </label>
+                        <a href="#" style="padding-left: 80px">Forgot Password?</a>
+                        <div class="container-fluid" id="sign">
+                            Don't have an account?<a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</a>
+                        </div>
+                    </div>
+         </div>
+            </div>
+     </div>
+        
+  <div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+      <center>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar2.png" alt="Avatar" class="avatar">
+      <br>
+      <br>
+    </div>
+          </center>
+      
+    <div class="container">
+        
+        <input type="text" placeholder="First name" id="widfor" name="uname" required><br>
+        <input type="text" placeholder="Last name" id="widfor" name="uname" required><br>
+      
+        <input type="email" placeholder="Email" id="widfor" name="psw" required><br>
+        <input type="text" placeholder="Mobile No." id="widfor" name="psw" required><br>
+        <input type="password" placeholder="Password" name="psw" id="widfor" required><br>
+        <input type="password" placeholder="Confirm Password" id="widfor" name="psw" required><br>
+        <button type="submit" id="log">Signup</button>
+        </div>
+        
+   
+      
+  </form>
+</div>      
+  
+  </div>
+        
+     <div class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-md-4" style="padding-left: 90px">
+                <h3 style="padding-top: 8px">&COPY; Home Service Provider</h3>
+                <p style="padding-left: 8px">Tagline</p>
+                <i class="fa fa-facebook-official" style="padding-left: 8px"></i>
+                <i class="fa fa-twitter" style="padding-left: 5px"></i>
+                <i class="fa fa-instagram" style="padding-left: 5px"></i>
+                <i class="fa fa-google-plus" style="padding-left: 5px"></i>
+                </div>
+                <div class="col-md-3" style="padding-left: 50px">
+                    <ul>
+                        <li style="padding-top: 20px"><h4>COMPANY</h4></li>
+                        <li style="padding-top: 12px"><a href="#">About Us</a></li>
+                        <li style="padding-top: 12px"><a href="#">Contact Us</a></li>
+                        <li style="padding-top: 12px"><a href="#">FAQS</a></li>
+                        <li style="padding-top: 12px"><a href="#">Terms and Conditions</a></li>
+                        <li style="padding-top: 12px"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2" style="padding-right: 20px">
+                    <ul>
+                        <li style="padding-top: 20px"><h4>CITIES</h4></li>
+                        <li style="padding-top: 12px"><a href="#">Mumbai</a></li>
+                        <li style="padding-top: 12px"><a href="#">Delhi</a></li>
+                        <li style="padding-top: 12px"><a href="#">Banglore</a></li>
+                        <li style="padding-top: 12px"><a href="#">Bhopal</a></li>
+                        <li style="padding-top: 12px"><a href="#">Indore</a></li>
+                        <li style="padding-top: 12px"><a href="#">Chennai</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" style="padding-right: 40px">
+                   <ul>
+                        <li  style="padding-top: 20px"><h4>Connect With Us</h4></li>
+                        <li style="padding-top: 12px"><a href="#">Login</a></li>
+                        <li style="padding-top: 12px"><a href="#">Signin</a></li>
+                   </ul>    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

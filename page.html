@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="Demo">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="mycss.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="myjs.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Home Service Provider</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        </div>
+        </div>
+         </nav>
+        <div class="container-fluid">
+     <!-- Slideshow container -->
+<div class="slideshow-container" style='margin-top:12px; height:300px; '>
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" alt='heloo1' style="width:100%; height:40%">
+   
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="appliances/elec.jpg" alt='hello2' style="width:100%; height:40%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="title.png" style="width:100%; height:40%">
+    
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dott" onclick="currentSlide(1)"></span>
+  <span class="dott" onclick="currentSlide(2)"></span>
+  <span class="dott" onclick="currentSlide(3)"></span>
+</div> 
+            
+</div><br><br><br>
+<div class="container-fluid" id="service">
+    <div>    
+            <h1 style="color: black;margin-left: 485px"><b>OUR SERVICES</b></h1>   
+    </div>
+    <marquee direction="right" scrolldelay=1 style="width: 330px;margin-left: 450px;"><hr id="line2"></marquee>
+    <div class="row">
+        <h3 class="fontser">INTERIOR SERVICE</h3><br>
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+            <img src="interior/painter.jpg" class="imser">
+            <a href="#!painting" style="margin-left: 65px">PAINTING</a>
+        </div>
+        <div class="col-md-2">
+            <img src="interior/carpenter.jpg" class="imser">
+            <a href="#!carpenter" style="margin-left: 55px">CARPENTER</a>
+        </div>
+        <div class="col-md-2">
+            <img src="interior/plumber.jpeg" class="imser">
+            <a href="#!plumber" style="margin-left: 60px">PLUMBER</a>
+        </div>
+        <div class="col-md-2">
+            <img src="interior/ceiling.jpg" class="imser">
+            <a href="#!ceiling" style="margin-left: 63px">CEILING</a>
+        </div>
+        <div class="col-md-2">
+            <img src="interior/floor.jpg" class="imser">
+            <a href="#!floor" style="margin-left: 70px">FLOOR</a>
+        </div>
+        <div class="col-md-1"></div>
+    </div><br>
+    <div class="row">
+        <h3 class="fontser">HOUSE KEEPING</h3><br>
+        <div class="col-md-3"></div>
+        <div class="col-md-2">
+            <img src="housekeeping/clean.jpg" class="imser">
+            <a href="#!cleaning" style="margin-left: 55px">HOUSE CLEAN</a>
+        </div>
+        <div class="col-md-2">
+            <img src="housekeeping/laundry.jpg" class="imser">
+            <a href="#!laundry" style="margin-left: 60px">LAUNDRY</a>
+        </div>
+        <div class="col-md-2">
+            <img src="housekeeping/pool.png" class="imser">
+            <a href="#!pool" style="margin-left: 45px">POOL CLEANING</a>
+        </div>
+        <div class="col-md-3"></div>
+    </div><br>
+    <div class="row">
+        <h3 class="fontser">CONSTRUCTION & RENOVATION</h3><br>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <img src="construction/construction.jpg" class="imser">
+            <a href="#!construction" style="margin-left: 45px">CONSTRUCTION</a>
+        </div>
+        <div class="col-md-2">
+            <img src="construction/kitchen.jpg" class="imser">
+            <a href="#!kitchen" style="margin-left: 65px">KITCHEN</a>
+        </div>
+        <div class="col-md-2">
+            <img src="construction/interior.jpg" class="imser">
+            <a href="#!interior" style="margin-left: 40px">INTERIOR DESIGN</a>
+        </div>
+        <div class="col-md-2">
+            <img src="construction/renovation.jpg" class="imser">
+            <a href="#!renovation" style="margin-left: 55px">RENOVATION</a>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br>
+    <div class="row">
+        <h3 class="fontser">WORKER & SECURITY</h3><br>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <img src="worksec/cook.jpg" class="imser">
+            <a href="#!cook" style="margin-left: 75px">COOK</a>
+        </div>
+        <div class="col-md-2">
+            <img src="worksec/maid.jpg" class="imser">
+            <a href="#!maid" style="margin-left: 78px">MAID</a>
+        </div>
+        <div class="col-md-2">
+            <img src="worksec/security.jpg" class="imser">
+            <a href="#!security" style="margin-left: 55px">SECURITY</a>
+        </div>
+        <div class="col-md-2">
+            <img src="worksec/babysitter.png" class="imser">
+            <a href="#!babysitter" style="margin-left: 55px">BABYSITTER</a>
+        </div>
+        <div class="col-md-2"></div>
+    </div><br>
+    <div class="row">
+        <h3 class="fontser">SALON</h3><br>
+        <div class="col-md-3"></div>
+        <div class="col-md-2">
+            <img src="salon/hair.png" class="imser">
+            <a href="#!hair" style="margin-left: 55px">HAIR DESIGN</a>
+        </div>
+        <div class="col-md-2">
+            <img src="salon/makeup.jpg" class="imser">
+            <a href="#!makeup" style="margin-left: 55px">MAKEUP</a>
+        </div>
+        <div class="col-md-2">
+            <img src="salon/spa.jpg" class="imser">
+            <a href="#!spa" style="margin-left: 80px">SPA</a>
+        </div>
+        <div class="col-md-3"></div>
+    </div><br>
+    <div class="row">
+        <h3 class="fontser">HEALTH</h3><br>
+        <div class="col-md-3"></div>
+        <div class="col-md-2">
+            <img src="health/fever.jpg" class="imser">
+            <a href="#!fever" style="margin-left: 45px">FEVER CHECKUP</a>
+        </div>
+        <div class="col-md-2">
+            <img src="health/kid-at-dentist-300x300.jpg" class="imser">
+            <a href="#!dentist" style="margin-left: 70px">DENTIST</a>
+        </div>
+        <div class="col-md-2">
+            <img src="health/blood.jpg" class="imser">
+            <a href="#!blood" style="margin-left: 55px">BLOOD TEST</a>
+        </div>
+        <div class="col-md-3"></div>
+    </div><br>
+    <div class="row">
+        <h3 class="fontser">TUTOR</h3><br>
+        <div class="col-md-3"></div>
+        <div class="col-md-2">
+            <img src="tutor/tutor.jpg" class="imser">
+            <a href="#!study" style="margin-left: 55px">STUDY TUTOR</a>
+        </div>
+        <div class="col-md-2">
+            <img src="tutor/cook.jpg" class="imser">
+            <a href="#!cooktutor" style="margin-left: 55px">COOK TUTOR</a>
+        </div>
+        <div class="col-md-2">
+            <img src="tutor/car.jpg" class="imser">
+            <a href="#!cartutor" style="margin-left: 55px">CAR TUTOR</a>
+        </div>
+        <div class="col-md-3"></div>
+    </div><br>
+    <br>
+    
+</div>
+<div ng-view></div>
+<div class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-md-4" style="padding-left: 90px">
+                <h3 style="padding-top: 8px">&COPY; Home Service Provider</h3>
+                <p style="padding-left: 8px">Tagline</p>
+                <i class="fa fa-facebook-official" style="padding-left: 8px"></i>
+                <i class="fa fa-twitter" style="padding-left: 5px"></i>
+                <i class="fa fa-instagram" style="padding-left: 5px"></i>
+                <i class="fa fa-google-plus" style="padding-left: 5px"></i>
+                </div>
+                <div class="col-md-3" style="padding-left: 50px">
+                    <ul>
+                        <li style="padding-top: 20px"><h4>COMPANY</h4></li>
+                        <li style="padding-top: 12px"><a href="#">About Us</a></li>
+                        <li style="padding-top: 12px"><a href="#">Contact Us</a></li>
+                        <li style="padding-top: 12px"><a href="#">FAQS</a></li>
+                        <li style="padding-top: 12px"><a href="#">Terms and Conditions</a></li>
+                        <li style="padding-top: 12px"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2" style="padding-right: 20px">
+                    <ul>
+                        <li style="padding-top: 20px"><h4>CITIES</h4></li>
+                        <li style="padding-top: 12px"><a href="#">Mumbai</a></li>
+                        <li style="padding-top: 12px"><a href="#">Delhi</a></li>
+                        <li style="padding-top: 12px"><a href="#">Banglore</a></li>
+                        <li style="padding-top: 12px"><a href="#">Bhopal</a></li>
+                        <li style="padding-top: 12px"><a href="#">Indore</a></li>
+                        <li style="padding-top: 12px"><a href="#">Chennai</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" style="padding-right: 40px">
+                   <ul>
+                        <li  style="padding-top: 20px"><h4>Connect With Us</h4></li>
+                        <li style="padding-top: 12px"><a href="#">Login</a></li>
+                        <li style="padding-top: 12px"><a href="#">Signin</a></li>
+                   </ul>    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
